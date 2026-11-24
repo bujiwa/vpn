@@ -1,0 +1,45 @@
+name: Weekly Docs Date Check
+
+on:
+  schedule:
+    # 每周一北京时间 09:00（UTC 01:00）自动更新一次文档核对日期
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update last checked date
+        run: |
+          TODAY=$(TZ='Asia/Shanghai' date '+%Y-%m-%d')
+          python3 - <<PY
+          import re, pathlib
+          today = "${TODAY}"
+          pattern = re.compile(r"(<!-- LAST_CHECKED -->).*?(<!-- /LAST_CHECKED -->)")
+          for p in ["README.md", "docs/index.md"]:
+              path = pathlib.Path(p)
+              if path.exists():
+                  text = path.read_text(encoding="utf-8")
+                  new_text = pattern.sub(rf"\g<1>{today}\g<2>", text)
+                  if new_text != text:
+                      path.write_text(new_text, encoding="utf-8")
+          PY
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No date change needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md docs/index.md
+          git commit -m "docs: weekly verify date ($(TZ='Asia/Shanghai' date '+%Y-%m-%d'))"
+          git push
