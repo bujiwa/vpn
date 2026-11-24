@@ -30,6 +30,12 @@ jobs:
                   new_text = pattern.sub(rf"\g<1>{today}\g<2>", text)
                   if new_text != text:
                       path.write_text(new_text, encoding="utf-8")
+          sitemap = pathlib.Path("docs/sitemap.xml")
+          if sitemap.exists():
+              s_text = sitemap.read_text(encoding="utf-8")
+              s_new = re.sub(r"(<loc>https://bujiwa\.github\.io/vpn/</loc>\s*<lastmod>).*?(</lastmod>)", rf"\g<1>{today}\g<2>", s_text, count=1)
+              if s_new != s_text:
+                  sitemap.write_text(s_new, encoding="utf-8")
           PY
 
       - name: Commit and push if changed
@@ -40,6 +46,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md docs/index.md
+          git add README.md docs/index.md docs/sitemap.xml
           git commit -m "docs: weekly verify date ($(TZ='Asia/Shanghai' date '+%Y-%m-%d'))"
           git push

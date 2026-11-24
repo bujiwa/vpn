@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Shadowsocks / Trojan 自建 VPN 教程与 2026 现状说明
+description: 详解 Shadowsocks (SS/SS-2022)、SSR 与 Trojan 协议在 2026 年自建 VPN 中的真实可用现状与选型建议。
 ---
 
 # Shadowsocks / Trojan 自建 VPN 与现状说明

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Hysteria2 自建高速 VPN 教程（晚高峰与弱网提速）
+description: 基于 QUIC/UDP 的 Hysteria2 高速 VPN 自建教程，适合晚高峰丢包严重的海外 VPS 提速，含一键安装与配置避坑说明。
 ---
 
 # Hysteria2 自建高速 VPN 教程

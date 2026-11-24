@@ -1,6 +1,7 @@
 ---
 layout: default
 title: VLESS + Reality 自建个人 VPN 教程（2026 免域名）
+description: 2026 最新 VLESS + Reality 自建个人 VPN 详细教程，无需域名和 SSL 证书，含 BBR 加速、Xray-core 配置模板与常见踩坑排查。
 ---
 
 # VLESS + Reality 自建个人 VPN 教程（免域名）

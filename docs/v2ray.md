@@ -1,6 +1,7 @@
 ---
 layout: default
 title: V2Ray / Xray 自建 VPN 教程（含 WS + TLS 套 CDN 思路）
+description: V2Ray 与 Xray 自建 VPN 教程，详解 WebSocket + TLS + Cloudflare CDN 架构，适合救活被封 VPS IP 作为备用 VPN 线路。
 ---
 
 # V2Ray / Xray 自建 VPN 教程（WS + TLS + CDN）

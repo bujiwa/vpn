@@ -1,6 +1,7 @@
 ---
 layout: default
 title: VPN 搭建与使用指南（2026 实测笔记）
+description: 2026 年个人自建 VPN 教程与使用避坑笔记，包含 VLESS-Reality、Hysteria2、V2Ray、Shadowsocks、全平台 VPN 客户端及平价 VPN 替代方案分享。
 ---
 
 # VPN 搭建与使用指南（2026 个人实测笔记）

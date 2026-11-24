@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 全平台 VPN 客户端推荐与配置指南（Windows / macOS / iOS / Android）
+description: 2026 年 Windows、macOS、iOS 与 Android 全平台开源 VPN 客户端推荐与配置技巧，涵盖 Clash Verge Rev、Shadowrocket、v2rayN、FlClash 等。
 ---
 
 # 全平台 VPN 客户端推荐与配置指南
