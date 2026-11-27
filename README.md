@@ -1,7 +1,7 @@
 # VPN 搭建与使用指南（2026 个人实测笔记）
 
 > 在线阅读版（GitHub Pages）：[https://bujiwa.github.io/vpn/](https://bujiwa.github.io/vpn/)  
-> 最后核对日期：<!-- LAST_CHECKED -->2026-11-24<!-- /LAST_CHECKED -->
+> 最后核对日期：<!-- LAST_CHECKED -->2026-11-27<!-- /LAST_CHECKED -->
 
 这份仓库主要是我自己这几年折腾 **VPN / 科学上网 / 自建梯子** 攒下来的一份笔记。平时经常有朋友问“怎么自己搭一个稳定的 VPN”、“为什么以前能用的协议现在连不上了”、“不想自己维护服务器有没有省心的替代方案”，索性全部整理到 GitHub 上，方便自己查阅，也顺便给刚入门的同学少踩点坑。
 
@@ -41,6 +41,8 @@
 - [V2Ray / Xray 搭建与 CDN 套壳教程](./docs/v2ray.md)
 - [Shadowsocks / Trojan 传统协议配置与现状说明](./docs/shadowsocks.md)
 - [Windows / macOS / iOS / Android VPN 客户端配置指南](./docs/clients.md)
+- [2026 免费 VPN 靠谱吗？实测避坑与低成本替代思路](./docs/free-vpn-guide.md)
+- [ChatGPT / Claude 无法访问怎么用 VPN 解决（2026 实测）](./docs/chatgpt-vpn.md)
 
 ### 自建前需要准备什么？
 1. **一台海外 VPS**：常见地区选日本、新加坡、美国西海岸（洛杉矶/圣何塞）或香港；系统建议 **Debian 12** 或 **Ubuntu 22.04/24.04**。

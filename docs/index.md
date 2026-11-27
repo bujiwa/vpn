@@ -7,7 +7,7 @@ description: 2026 年个人自建 VPN 教程与使用避坑笔记，包含 VLESS
 # VPN 搭建与使用指南（2026 个人实测笔记）
 
 > GitHub 仓库主页：[bujiwa/vpn](https://github.com/bujiwa/vpn)  
-> 最后核对日期：<!-- LAST_CHECKED -->2026-11-24<!-- /LAST_CHECKED -->
+> 最后核对日期：<!-- LAST_CHECKED -->2026-11-27<!-- /LAST_CHECKED -->
 
 这里是个人整理的 **VPN / 科学上网 / 自建梯子** 实战笔记，覆盖 2026 年主流抗封锁协议搭建、全平台客户端配置，以及“自建 vs 现成服务”的真实对比体验。
 
@@ -20,6 +20,8 @@ description: 2026 年个人自建 VPN 教程与使用避坑笔记，包含 VLESS
 - [V2Ray / Xray 搭建与套 CDN 教程](./v2ray.html)
 - [Shadowsocks / Trojan 传统协议说明](./shadowsocks.html)
 - [Windows / macOS / iOS / Android 客户端配置指南](./clients.html)
+- [2026 免费 VPN 靠谱吗？实测避坑指南](./free-vpn-guide.html)
+- [ChatGPT / Claude 无法访问怎么用 VPN 解决](./chatgpt-vpn.html)
 
 ---
 

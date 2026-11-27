@@ -1,5 +1,5 @@
 title: VPN 搭建与使用指南（2026 实测笔记）
-description: 个人整理的 2026 年 VPN 搭建教程与使用指南，涵盖 VLESS-Reality、Hysteria2、V2Ray、Shadowsocks、全平台 VPN 客户端配置与避坑记录。
+description: VPN 搭建与使用指南（2026 更新）：个人整理的科学上网与翻墙 VPN 教程，涵盖 VLESS-Reality、Hysteria2、V2Ray、Shadowsocks 自建、全平台客户端配置，以及高性价比梯子与机场避坑记录。
 url: "https://bujiwa.github.io"
 baseurl: "/vpn"
 theme: jekyll-theme-cayman
